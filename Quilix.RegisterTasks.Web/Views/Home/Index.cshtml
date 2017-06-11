@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Quilix.RegisterTasks.Dal.Employee>
+
+<h2>Employees</h2>
+
+<p>
+    @Html.ActionLink("Create New Employees", "Create", "Home")
+
+</p>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>
+            @Html.DisplayName("First Name")
+        </th>
+        <th>
+            @Html.DisplayName("Middle Name")
+        </th>
+        <th>
+            @Html.DisplayName("Last Name")
+        </th>
+        <th>
+            @Html.DisplayName("Delete Update")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.First_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Middle_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Last_name)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                @Html.ActionLink("Update", "Update", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>
+    @Html.ActionLink("Return", "Index", "Task")
+
+</p>

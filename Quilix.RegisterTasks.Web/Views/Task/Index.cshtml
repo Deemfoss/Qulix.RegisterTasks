@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Quilix.RegisterTasks.Dal.TaskGetAll>
+
+<h2>Task list</h2>
+
+
+<p>
+    @Html.ActionLink("Employees List", "Index", "Home")
+</p>
+
+
+<p>
+    @Html.ActionLink("Add Task", "Create", "Task")
+
+</p>
+
+
+
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayName("Name")
+        </th>
+        <th>
+            @Html.DisplayName("Start Date")
+        </th>
+        <th>
+            @Html.DisplayName("End Date")
+        </th>
+        <th>
+            @Html.DisplayName("Size")
+        </th>
+        <th>
+            @Html.DisplayName("First Name")
+        </th>
+        <th>
+            @Html.DisplayName("Last Name")
+        </th>
+        <th>
+            @Html.DisplayName("Status")
+        </th>
+        <th>
+            @Html.DisplayName("Update Delete")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Start_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.End_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.First_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Last_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+
+                @Html.ActionLink("Update", "Update", new { id = item.Id })
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+
+            </td>
+        </tr>
+    }
+
+</table>
