@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace Quilix.RegisterTasks.Dal
+namespace Qulix.RegisterTasks.Dal
 {
     public class Employee
     {

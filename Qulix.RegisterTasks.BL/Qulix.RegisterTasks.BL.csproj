@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ACA525B1-5221-4364-95E5-9879937BCBB0}</ProjectGuid>
+    <ProjectGuid>{0A8BA775-594E-482A-94BD-5A20E6591750}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Quilix.RegisterTasks.Dal</RootNamespace>
-    <AssemblyName>Quilix.RegisterTasks.Dal</AssemblyName>
+    <RootNamespace>Qulix.RegisterTasks.BL</RootNamespace>
+    <AssemblyName>Qulix.RegisterTasks.BL</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,10 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Anotation\ValdDateAttribute.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Task.cs" />
+    <Compile Include="Concrete\EmployeesRepository.cs" />
+    <Compile Include="Concrete\Repository.cs" />
+    <Compile Include="Concrete\TaskRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qulix.RegisterTasks.Dal\Qulix.RegisterTasks.Dal.csproj">
+      <Project>{aca525b1-5221-4364-95e5-9879937bcbb0}</Project>
+      <Name>Qulix.RegisterTasks.Dal</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

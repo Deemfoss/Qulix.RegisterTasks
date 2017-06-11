@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-using Quilix.RegisterTasks.Dal;
-namespace Quilix.RegisterTasks.BL.Concrete
+using Qulix.RegisterTasks.Dal;
+namespace Qulix.RegisterTasks.BL.Concrete
 {
    
     public class EmployeesRepository : Repository<Employee, int>, GetAllRep<Employee>

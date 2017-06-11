@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-namespace Quilix.RegisterTasks.BL.Concrete
+namespace Qulix.RegisterTasks.BL.Concrete
 {
     public interface GetAllRep<TEntity> where TEntity : class
     {

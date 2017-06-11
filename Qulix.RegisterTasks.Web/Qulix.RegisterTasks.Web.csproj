@@ -210,13 +210,13 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Quilix.RegisterTasks.BL\Quilix.RegisterTasks.BL.csproj">
+    <ProjectReference Include="..\Qulix.RegisterTasks.BL\Qulix.RegisterTasks.BL.csproj">
       <Project>{0a8ba775-594e-482a-94bd-5a20e6591750}</Project>
-      <Name>Quilix.RegisterTasks.BL</Name>
+      <Name>Qulix.RegisterTasks.BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Quilix.RegisterTasks.Dal\Quilix.RegisterTasks.Dal.csproj">
+    <ProjectReference Include="..\Qulix.RegisterTasks.Dal\Qulix.RegisterTasks.Dal.csproj">
       <Project>{aca525b1-5221-4364-95e5-9879937bcbb0}</Project>
-      <Name>Quilix.RegisterTasks.Dal</Name>
+      <Name>Qulix.RegisterTasks.Dal</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace Quilix.RegisterTasks.Dal.Anotation
+namespace Qulix.RegisterTasks.Dal.Anotation
 {
     public class ValdDateAttribute : ValidationAttribute
     {

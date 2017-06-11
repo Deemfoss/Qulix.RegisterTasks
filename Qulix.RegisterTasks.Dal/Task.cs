@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-using Quilix.RegisterTasks.Dal.Anotation;
+using Qulix.RegisterTasks.Dal.Anotation;
 
-namespace Quilix.RegisterTasks.Dal
+namespace Qulix.RegisterTasks.Dal
 {
     public class Task
     {

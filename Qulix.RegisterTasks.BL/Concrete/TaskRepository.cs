@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
-using TaskP = Quilix.RegisterTasks.Dal;
+using TaskP = Qulix.RegisterTasks.Dal;
 
-namespace Quilix.RegisterTasks.BL.Concrete
+namespace Qulix.RegisterTasks.BL.Concrete
 {
     public class TasksRepository : Repository<TaskP.Task, int>, GetAllRep<TaskP.TaskGetAll>
     {

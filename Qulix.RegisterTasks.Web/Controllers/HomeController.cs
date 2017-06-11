@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Quilix.RegisterTasks.Dal;
-using Quilix.RegisterTasks.BL.Concrete;
+using Qulix.RegisterTasks.Dal;
+using Qulix.RegisterTasks.BL.Concrete;
 
-namespace Quilix.RegisterTasks.Web.Controllers
+namespace Qulix.RegisterTasks.Web.Controllers
 {
     public class HomeController : Controller
     {
